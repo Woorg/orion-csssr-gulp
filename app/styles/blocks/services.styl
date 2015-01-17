@@ -1,0 +1,63 @@
+.services
+	padding 1.875rem 0 2.125rem
+	min-height 18.1875rem
+	background #e7eef6
+	&-in
+		@extend .in
+	&-ul
+		font-size 0
+	&-li
+		margin-left (100/989)*100%
+		display inline-block
+		vertical-align top
+		width (260/989)*100%
+		text-align center
+		&:first-child
+			margin-left 0
+		@media all and (max-width 37.5rem)
+			margin: 0 0 1.25rem
+			display block
+			width: 100%
+		@media all and (min-width 37.5625rem)
+			margin-left (100/989)*100%
+			display inline-block
+			width (260/989)*100%
+
+	&-a
+		display block
+		color #88929d
+		&:hover
+			text-decoration none
+	&-i
+		&-img
+			margin-bottom 1.625rem
+			border 0.0625rem solid #cbd7e4
+			display inline-block
+			size 6rem 6rem
+			background #CADAEC
+			line-height 6rem
+			-webkit-border-radius 0.3125rem
+					border-radius 0.3125rem
+		&-icon
+			display inline-block
+			vertical-align middle
+			&._icon-1
+				sprite($service-1)
+				@media all and (-webkit-min-device-pixel-ratio: 1.5)
+					sprite2($service-1_2x)
+			&._icon-2
+				sprite($service-2)
+				@media all and (-webkit-min-device-pixel-ratio: 1.5)
+					sprite2($service-2_2x)
+			&._icon-3
+				sprite($service-3)
+				@media all and (-webkit-min-device-pixel-ratio: 1.5)
+					sprite2($service-3_2x)
+		&-title
+			margin-top 0
+			margin-bottom 1.25rem
+			font normal 1.25rem/1 $ff-mb
+			color #555
+		&-text
+			font: normal 0.875rem/1.5rem $ff-or
+			color: #88929d

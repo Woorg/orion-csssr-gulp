@@ -1,0 +1,66 @@
+.team-in
+	@extend .in
+	padding-top: 3.125rem
+	padding-bottom: 6.25rem
+	text-align: center
+.team-title
+	margin-bottom: 2.5rem
+	font normal 1.875rem/1 $ff-mr
+	color #555
+.team-text
+	margin-bottom: 4.375rem
+	font normal 0.875rem/1.4 $ff-or 
+.team-ul
+	font-size: 0
+.team-li
+	margin-left: (108/989)*100%
+	display: inline-block
+	vertical-align: top
+	width: (166/989)*100%
+	&:first-child
+		margin-left: 0
+	font-size: 0.75rem
+	@media all and (max-width 31.25rem)
+		margin 0 auto 0.625rem
+		width 95% 
+		display block
+		&:first-child
+			margin 0 auto 0.625rem
+.team-i-pic
+	margin auto
+	margin-bottom: 1.375rem
+	width: (123/166)*100%
+	height: (123/166)*100%
+	-webkit-border-radius: 999px
+	border-radius: 999px
+	@media all and (max-width 31.25rem)
+		width 25%
+		height 25%
+.team-i-title
+	margin-bottom: 0.9375rem
+	font-size: 1.1875rem
+	font-family $ff-mr
+	letter-tracking(-30)
+.team-i-text
+	font-size: 0.75rem
+	line-height: 1
+	letter-tracking(-30)
+.team-social
+	margin-top: 1.25rem
+	font-size: 0
+.team-social-i
+	margin-left: 24%
+	display: inline-block
+	
+	&:first-child
+		margin-left: 0
+.team-social-a
+	display: inline-block
+	vertical-align: middle
+	text-indent -9999px
+	&._fb
+		sprite($social1)
+	&._tw
+		sprite($social2)
+	&._db
+		sprite($social3)

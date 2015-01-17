@@ -1,0 +1,29 @@
+.button
+	display: inline-block
+	font-family $ff-mb
+	line-height 2.0625rem
+	-webkit-border-radius 0.3125rem
+	 border-radius 0.3125rem
+	&._style-1
+		padding 0 0.75rem
+		font-size 0.875rem
+		background #3498DB
+		color #fff
+	&._style-2
+		padding 0 0.75rem
+		background #ff1e4f
+		font-size 0.875rem
+		line-height 2.375rem
+		color #fff
+	@media all and (max-width 20rem)
+		line-height 1.75rem
+		&._style-1
+			font-size 0.75rem
+	@media all and (min-width 20.0625rem)
+		line-height 1.75rem
+		&._style-1
+			font-size 0.75rem
+	@media all and (min-width 47.5rem)
+		&._style-1
+			line-height 2.0625rem
+			font-style: 0.875rem

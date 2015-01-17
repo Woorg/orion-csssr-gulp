@@ -1,0 +1,83 @@
+.footer
+	background: #000
+	&-in
+		@extend .in
+		padding 2.5rem 0
+		font-size 0
+		clearfix()
+		@media all and (max-width 43.125rem)
+			text-align center
+	&-right
+		float right
+		display inline-block
+		vertical-align top
+		@media all and (max-width 43.125rem)
+			margin 0 auto 0.625rem
+			width 100%
+			float none
+	&-left
+		width 50%
+		display inline-block
+		@media all and (max-width 43.125rem)
+			margin 0 auto 0.625rem
+			width 90%
+			text-align left
+	&-list
+		display inline-block
+		vertical-align top 
+		width 33%
+		&-title
+			margin-top 0
+			margin-bottom 10px
+			font: normal 0.875rem/1 $ff-mb
+			text-transform uppercase
+	&-ul
+		font-family $ff-or
+	&-li
+		line-height 1.5rem
+	&-a
+		font-size 0.875rem
+		color #d7d7d7 	
+	&-subscribe
+		&-title
+			font-family $ff-ob
+			font-size 0.875rem
+			text-transform uppercase
+		&-form
+			margin-bottom 1.5625rem
+			line-height 3.0625rem
+		&-input
+		&-submit
+			margin-left -0.25rem
+			font-size 0.875rem
+			display inline-block
+		&-input
+			border none
+			padding 0 1.9375rem
+			width 83%
+			height 3.0625rem
+			line-height 3.0625rem
+			background #363636 
+			font-family $ff-or
+			color #5c5c5c 
+		&-submit
+			border none
+			padding 0 0.875rem
+			height 3.0625rem
+			background #555
+			font-family $ff-mb
+			color #d7d7d7   
+			text-transform uppercase
+	&-copyright
+		font-family $ff-or 
+		font-size 0.75rem
+		line-height 1.4
+		text-align right
+		color #535353 
+		&-icon
+			display inline-block
+			margin-left 0.5625rem
+			sprite($heart-icon)
+			@media all and (-webkit-min-device-pixel-ratio: 1.5)
+				sprite2($heart-icon_2x)
+				

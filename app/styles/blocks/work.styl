@@ -1,0 +1,65 @@
+.work
+	background #E7EEF6
+	&-in
+		@extend .in
+		padding 4.875rem 0 3.875rem
+		text-align center 
+	&-title
+		margin-bottom 2.125rem
+		font: normal 1.875rem/1.4 $ff-mr
+	&-text
+		margin-bottom 3.4375rem
+		font normal 0.875rem/1.4 $ff-or 
+		color: #7d7d7d
+	&-slider
+		margin-bottom 1.375rem
+		margin auto
+		max-width 46.125rem
+	&-ul
+		font-size 0
+	&-li
+		margin-left (20/738)*100%
+		margin-bottom (20/738)*100%
+		border-bottom #EEE
+		width: (346/732)*100%
+		height: (218/732)*100%
+		display inline-block
+		@media all and (max-width 32.5rem)
+			margin auto
+			margin-bottom (20/738)*100%
+			width 95%
+			display block
+	&-img
+		max-width 100%
+		height auto  
+		display block
+	&-figure
+		position relative
+	&-caption
+		position absolute 
+		left 1.0625rem 
+		bottom 0.8125rem
+		padding 0 2.125rem
+		background black
+		background rgba(0,0,0,.65)
+		font-size 0.9375rem
+		font-family $ff-ob 
+		color #FFF
+		line-height 2.125rem
+	&-slider
+		&-pag
+			text-align right
+			&-i
+				margin-left 0.75rem 
+				display inline-block
+				hide-text()
+				&._left
+					sprite($arrow-left)
+				&._right
+					sprite($arrow-right)
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5)
+	.work-slider-pag-i._left
+		sprite2($arrow-left_2x)
+	.work-slider-pag-i._right
+		sprite2($arrow-right_2x)

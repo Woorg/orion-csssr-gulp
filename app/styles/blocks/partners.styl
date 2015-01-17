@@ -1,0 +1,40 @@
+.partners
+	background #111
+	@media all and (max-width 43.125rem)
+		display none 
+	&-in
+		@extend .in
+		padding 2.125rem 0 1.875rem
+	&-ul
+		text-align justify
+		font-size 0
+		clearfix()
+.partners-li
+	display inline-block
+	width 24.666%
+	vertical-align middle
+	text-align center
+	&._style-1
+		a
+			sprite($nasa-logo)
+			@media all and (-webkit-min-device-pixel-ratio: 1.5)
+				sprite2($nasa-logo_2x)
+	&._style-2
+		a
+			sprite($jaxa-logo)
+			@media all and (-webkit-min-device-pixel-ratio: 1.5)
+				sprite2($jaxa-logo_2x)
+				
+	&._style-3
+		a
+			sprite($boeing-logo)
+			@media all and (-webkit-min-device-pixel-ratio: 1.5)
+				sprite2($boeing-logo_2x)
+	&._style-4
+		a
+			sprite($cnn-logo)
+			@media all and (-webkit-min-device-pixel-ratio: 1.5)
+				sprite2($cnn-logo_2x)
+.partners-a
+	display inline-block
+	hide-text()	

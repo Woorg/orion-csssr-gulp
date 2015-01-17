@@ -1,0 +1,157 @@
+.how-in
+	@extend .in
+	padding: 3.625rem 0 0
+	text-align: center
+.how-title
+	margin-top: 0
+	margin-bottom: 2.1875rem
+	font: normal 1.875rem/1.4 $ff-mr
+	color: #464646
+.how-text
+	margin-bottom: 2.1875rem
+	font: normal 0.875rem/1.4 $ff-or
+	color: #a1a1a1
+.how-steps
+	position: relative
+	margin-bottom: 3.625rem
+	padding: 1.25rem 0
+	min-height: 18.1875rem
+	&:before
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -0.0625rem
+		content: ""
+		width: 0.1875rem
+		height: 100%
+		background: #d2d3d7
+	@media all and (max-width 600px)
+		display none
+.how-steps-circle
+	position: absolute
+	border: 0.1875rem solid #d2d3d7
+	left: 50%
+	margin-left: -(10.555/989)*100%
+	width: 1.25rem
+	height: 1.25rem
+	background: #FFF
+	-webkit-border-radius: 999px
+	border-radius: 999px
+	&._top
+		top: 0
+	&._bottom
+		bottom: 0
+.how-step
+	position: relative
+	width: (443/989)*100%
+	text-align: left
+	&._step-1
+		margin-top: 0.375rem
+		margin-bottom: 1.875rem
+		border-bottom: 0.3125rem solid #4FB1F3
+		float: right
+		&:before
+			position: absolute
+			content: ""
+			top: 50%
+			left: -(57.5/443) * 100%
+			margin-top: -0.375rem
+			display: block
+			width: 0.8125rem
+			height: 0.8125rem
+			background: #4fb1f3
+			-webkit-border-radius: 999px
+			border-radius: 999px
+	&._step-2
+		margin-top: 8.125rem
+		float: left
+		border-bottom: 0.3125rem solid #ff1e4f
+		&:before
+			position: absolute
+			content: ""
+			top: 50%
+			right: -(59/443)*100%
+			margin-top: -0.375rem
+			display: block
+			width: 0.8125rem
+			height: 0.8125rem
+			background: #ff1e4f
+			-webkit-border-radius: 999px
+			border-radius: 999px
+.how-step-1
+	position: relative
+	border: 0.0625rem solid #e1e5eb
+	border-bottom: none
+	min-height: 5.8125rem
+	padding: 1.5625rem (20/443)*100%
+	&:before
+		left: -1.625rem
+		top: 50%
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+		border-color: rgba(225, 229, 235, 0)
+		border-right-color: #e1e5eb
+		border-width: 0.8125rem
+		margin-top: -0.8125rem
+	&:after
+		left: -1.5rem
+		top: 50%
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+		border-color: rgba(255, 255, 255, 0)
+		border-right-color: #ffffff
+		border-width: 0.75rem
+		margin-top: -0.75rem
+.how-step-2
+	position: relative
+	border: 0.0625rem solid #e1e5eb
+	border-bottom: none
+	min-height: 5.8125rem
+	padding: 1.5625rem (20/443)*100%
+	&:before
+		right: -1.625rem
+		top: 50%
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+		border-color: rgba(225, 229, 235, 0)
+		border-left-color: #e1e5eb
+		border-width: 0.8125rem
+		margin-top: -0.8125rem
+	&:after
+		right: -1.5rem
+		top: 50%
+		border: solid transparent
+		content: " "
+		height: 0
+		width: 0
+		position: absolute
+		pointer-events: none
+		border-color: rgba(255, 255, 255, 0)
+		border-left-color: #ffffff
+		border-width: 0.75rem
+		margin-top: -0.75rem
+.how-step-title
+	margin: 0 0 0.875rem
+	font-size 0.875rem
+	color: #717171
+.how-step-text
+	margin: 0
+	font: normal 0.75rem/1.4 $ff-or
+	color: #898989
+.how-button
+	font-size: 0.875rem
+	.button
+		position: relative
+		bottom: -1.1875rem

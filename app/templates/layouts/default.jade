@@ -1,0 +1,19 @@
+include ../helpers/variables
+include ../helpers/mixins
+
+
+doctype html
+<!--[if lt IE 9]>
+<html class="ie8" lang="ru">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+html(lang='ru')
+	<!--<![endif]-->
+	include ../partials/head
+	body
+		.main
+			include ../partials/header
+			block content
+			include ../partials/footer
+
+		include ../partials/scripts

@@ -1,0 +1,33 @@
+//- Тут первый аргумент это скрипты, второй зависимости
++script([], ['common.min.js'])
+
+head
+	meta(charset='utf-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimal-ui')
+	meta(http-equiv='X-UA-Compatible' content='IE=edge')
+	meta(name='imagetoolbar' content='no')
+	meta(name='msthemecompatible' content='no')
+	meta(name='cleartype' content='on')
+	meta(name='HandheldFriendly' content='True')
+
+	meta(name='format-detection' content='telephone=no')
+	meta(name='format-detection' content='address=no')
+
+	meta(name='apple-mobile-web-app-capable' content='yes')
+	meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+
+	//- http://realfavicongenerator.net/faq#why_ico_not_declared
+
+	block head
+	title#title= pageTitle || page.title
+	meta(name='description' content=pageDescription || page.description)
+	meta(name='keywords' content=pageKeywords || page.keywords)
+	meta(name='copyright' content=pageCopyright || page.copyright)
+
+	link(href='assets/styles/common.css?' + timestamp rel='stylesheet')
+
+	<!--[if lt IE 9]>
+	script(src="assets/scripts/libs/html5shiv/dist/html5shiv.js")
+	<![endif]-->
+
+	script(src='https://maps.googleapis.com/maps/api/js')

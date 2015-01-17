@@ -1,0 +1,54 @@
+.bx-wrapper
+	position relative
+	margin auto
+	padding 0
+	*zoom 1
+	img
+		max-width 100%
+		display block
+	.bx-viewport
+		height 43.0625rem
+		background #fff
+		-webkit-transform translatez(0)
+		-moz-transform translatez(0)
+		-ms-transform translatez(0)
+		-o-transform translatez(0)
+		transform translatez(0)
+	.bx-caption
+		position absolute
+		bottom 0
+		left 0
+		background #666\9
+		background rgba(80, 80, 80, 0.75)
+		width 100%
+		span
+			color #fff
+			font-family Arial
+			display block
+			font-size .85em
+			padding 0.625rem
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto
+	position absolute
+	bottom -30px
+	width 100%
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item
+	display inline-block
+	*zoom 1
+	*display inline
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active
+	background #000
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active
+	background-position -86px 0
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active
+	background-position -86px -33px
+
