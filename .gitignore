@@ -2,7 +2,6 @@
 app/scripts/libs
 app/styles/helpers/sprite.styl
 app/images/sprite.png
-dist
 
 # Numerous always-ignore extensions
 *.bak
